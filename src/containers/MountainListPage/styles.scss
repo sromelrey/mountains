@@ -1,0 +1,215 @@
+.tiles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 1291px;
+  height: 1018px;
+  left: 195px;
+  top: 644px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+
+    ul li {
+      list-style: none;
+      flex: 25%;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+
+      position: static;
+      width: 300px;
+      height: 436px;
+      top: 0px;
+      margin-top: 24px;
+      border-radius: 10px;
+      .img {
+        position: static;
+        width: 300px;
+        height: 300px;
+        left: 0px;
+        top: 0px;
+
+        border-radius: 8px;
+
+        /* Inside Auto Layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 16px 0px;
+      }
+      .frame {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: static;
+        width: 300px;
+        height: 120px;
+        left: 0px;
+        top: 316px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin-top: 16px;
+        .heading {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 110%;
+          margin: 0px;
+        }
+        .body {
+          position: static;
+          left: 0%;
+          right: 0%;
+          top: 50%;
+          bottom: 0%;
+
+          /* Body/S */
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px 0px;
+  }
+  .menu_input {
+    position: absolute;
+    width: 1290px;
+    height: 64px;
+    left: 195px;
+    top: 540px;
+    .search_group {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 850px;
+      height: 64px;
+      left: -190px;
+      top: -570px;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 8px;
+      input {
+        width: 90%;
+        height: 50%;
+        border: none;
+      }
+      input:focus-visible {
+        outline-style: none;
+      }
+    }
+    .sort {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 23px 48px;
+
+      position: absolute;
+      height: 64px;
+      left: 68%;
+
+      top: -570px;
+
+      /* Greyscale/10 */
+
+      border: 2px solid #e6e6e6;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+  }
+  .pagination {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100%);
+    height: 64px;
+    left: 0px;
+    top: 954px;
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 24px 0px;
+    .pagination_button {
+      position: absolute;
+      width: 325px;
+      left: 0px;
+      top: 954px;
+      button {
+        width: 64px;
+        height: 16px;
+        padding: 20px;
+        background: white;
+      }
+    }
+    .show_next {
+      position: absolute;
+      width: 325px;
+      right: 20px;
+      top: 954px;
+      button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 23px 32px;
+
+        position: absolute;
+        width: 301px;
+        right: 0px;
+        top: 0%;
+        bottom: 0%;
+
+        /* Colour/Secondary */
+
+        background: #3852f7;
+        border-radius: 8px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .search_input {
+    position: absolute;
+    width: 325px;
+    height: 48px;
+    left: 25px;
+    top: 332px;
+  }
+  .tiles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 326px;
+    height: 1588px;
+    left: 25px;
+    top: 404px;
+  }
+}

@@ -1,0 +1,230 @@
+.root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  .header {
+    position: absolute;
+    width: 1680px;
+    height: 460px;
+    left: 0px;
+    top: 0px;
+
+    /* Colour/Secondary */
+
+    background: #3852f7;
+
+    .logo {
+      position: absolute;
+      left: 11.61%;
+      right: 78.87%;
+      top: 13.85%;
+      bottom: 80.12%;
+    }
+    .polygon5 {
+      position: absolute;
+      width: 150.79px;
+      height: 151.15px;
+      top: 240px;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    .frame {
+      position: absolute;
+      width: 630px;
+      height: 160px;
+      left: 195px;
+      top: 79px;
+      .heading {
+        position: absolute;
+        width: 630px;
+        height: 68px;
+        /* Heading/M */
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 80px;
+        line-height: 68px;
+        /* identical to box height, or 85% */
+
+        color: #ffffff;
+      }
+      .body {
+        position: absolute;
+        width: 630px;
+        height: 64px;
+        top: 175px;
+
+        /* Body/L */
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        /* or 133% */
+
+        /* Greyscale/White */
+
+        color: #ffffff;
+      }
+    }
+    .polygon3 {
+      position: absolute;
+      width: 413.62px;
+      height: 385.86px;
+      left: 1079.48px;
+      top: 74px;
+
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    .polygon6 {
+      position: absolute;
+      width: 55.95px;
+      height: 56.09px;
+      left: 474.05px;
+      top: 82px;
+
+      /* Stylesheet/Text - Dark */
+
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    .polygon2 {
+      position: absolute;
+      width: 310.31px;
+      height: 261.13px;
+      left: 969px;
+      top: 125.84px;
+
+      /* Colour/Purple */
+
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    .polygon4 {
+      position: absolute;
+      width: 394.51px;
+      height: 395.46px;
+      left: 1282.95px;
+      top: 33.54px;
+
+      /* Stylesheet/Text - Dark */
+
+      transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .root {
+    position: absolute;
+    width: 1680px;
+    height: 1862px;
+    background: #ffffff;
+    .header {
+      position: absolute;
+      width: 1680px;
+      height: 460px;
+      left: 0px;
+      top: 0px;
+
+      /* Colour/Secondary */
+
+      background: #3852f7;
+      .polygon6 {
+        position: absolute;
+        width: 110px;
+        height: 80px;
+        left: 500px;
+        top: 110px;
+
+        /* Stylesheet/Text - Dark */
+
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      .polygon5 {
+        display: none;
+      }
+      .polygon2 {
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        left: 540px;
+        top: 200px;
+
+        /* Colour/Purple */
+
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      .polygon3 {
+        position: absolute;
+        width: 250px;
+        height: 200px;
+        left: 610px;
+        top: 200px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      .polygon4 {
+        display: none;
+      }
+
+      .logo {
+        position: absolute;
+        left: 40px;
+      }
+
+      .frame {
+        position: absolute;
+        width: 630px;
+        height: 160px;
+        left: 40px;
+        top: 79px;
+        .heading {
+          position: absolute;
+          width: 630px;
+          height: 68px;
+          /* Heading/M */
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 80px;
+          line-height: 68px;
+          /* identical to box height, or 85% */
+
+          color: #ffffff;
+        }
+        .body {
+          position: absolute;
+          width: 350px;
+          height: 64px;
+          top: 175px;
+
+          /* Body/L */
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 32px;
+          /* or 133% */
+
+          /* Greyscale/White */
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 1680px;
+  height: 120px;
+  left: 0px;
+  top: 1742px;
+
+  /* Colour/Primary-Dark */
+
+  background: #3c3c3c;
+}
