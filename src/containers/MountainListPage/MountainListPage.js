@@ -73,7 +73,7 @@ function MountainListPage(props) {
             onClick={() => dispatch(push(`/${mountain.slug}`))}
             key={index}
           >
-            <img src={mountain?.image_link} alt="Avatar" />
+            <img src={mountain?.image_link} alt="Avatar" className="img" />
             <div className="frame">
               <p className="heading">{mountain?.title}</p>
               <p className="body">{mountain?.title_long}</p>

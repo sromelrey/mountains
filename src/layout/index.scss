@@ -1,14 +1,14 @@
 .root {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  height: calc(100vh);
+  max-height: calc(100vh);
   background: #ffffff;
   .header {
     position: absolute;
-    width: 1680px;
+    width: 1880px;
     height: 460px;
-    left: 0px;
-    top: 0px;
+    left: -10px;
+    top: -10px;
 
     /* Colour/Secondary */
 
@@ -73,7 +73,7 @@
       position: absolute;
       width: 413.62px;
       height: 385.86px;
-      left: 1079.48px;
+      left: 1378.48px;
       top: 74px;
 
       transform: matrix(1, 0, 0, 1, 0, 0);
@@ -82,7 +82,7 @@
       position: absolute;
       width: 55.95px;
       height: 56.09px;
-      left: 474.05px;
+      left: 574.05px;
       top: 82px;
 
       /* Stylesheet/Text - Dark */
@@ -93,7 +93,7 @@
       position: absolute;
       width: 310.31px;
       height: 261.13px;
-      left: 969px;
+      left: 1210px;
       top: 125.84px;
 
       /* Colour/Purple */
@@ -102,9 +102,9 @@
     }
     .polygon4 {
       position: absolute;
-      width: 394.51px;
-      height: 395.46px;
-      left: 1282.95px;
+      width: 265.46px;
+      height: 275.46px;
+      left: 1630px;
       top: 33.54px;
 
       /* Stylesheet/Text - Dark */
@@ -112,24 +112,110 @@
       transform: matrix(1, 0, 0, 1, 0, 0);
     }
   }
+  .footer {
+    position: absolute;
+    width: 1880px;
+    height: 108px;
+    left: -10px;
+    top: 2032px;
+
+    background: #3c3c3c;
+    .credit {
+      position: absolute;
+      left: 62.5%;
+      right: 11.61%;
+      top: 40%;
+      bottom: 43.33%;
+
+      /* Disclaimer/L */
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 20px;
+      /* identical to box height, or 100% */
+
+      text-align: right;
+
+      /* Greyscale/White */
+
+      color: #ffffff;
+    }
+    img {
+      position: absolute;
+      left: 5%;
+      top: 40%;
+      bottom: 43.33%;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 20px;
+
+      text-align: right;
+
+      color: #ffffff;
+    }
+  }
 }
 
 @media only screen and (max-width: 300px) {
   .root {
     position: absolute;
-    width: 1680px;
-    height: 1862px;
+    height: calc(100vh);
+    max-height: calc(100vh);
     background: #ffffff;
     .header {
       position: absolute;
-      width: 1680px;
-      height: 460px;
-      left: 0px;
+
+      height: 492px;
+      left: -10px;
       top: 0px;
-
-      /* Colour/Secondary */
-
       background: #3852f7;
+      .logo {
+        position: absolute;
+        left: 6.67%;
+        right: 63.47%;
+        top: 9.59%;
+        bottom: 83.77%;
+      }
+      .frame {
+        position: absolute;
+        width: 210px;
+        height: 123px;
+        left: 25px;
+        top: 100px;
+        .heading {
+          position: absolute;
+          width: 210px;
+          height: 35px;
+          top: 10px;
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 32px;
+          line-height: 110%;
+
+          color: #ffffff;
+        }
+        .body {
+          position: absolute;
+          width: 210px;
+          height: 80px;
+          left: 0px;
+          top: 143px;
+
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 25px;
+          line-height: 20px;
+
+          color: #ffffff;
+        }
+      }
       .polygon6 {
         position: absolute;
         width: 110px;
@@ -148,7 +234,7 @@
         position: absolute;
         width: 200px;
         height: 150px;
-        left: 540px;
+        left: 699px;
         top: 200px;
 
         /* Colour/Purple */
@@ -159,7 +245,7 @@
         position: absolute;
         width: 250px;
         height: 200px;
-        left: 610px;
+        left: 780px;
         top: 200px;
         transform: matrix(1, 0, 0, 1, 0, 0);
       }
@@ -214,17 +300,42 @@
         }
       }
     }
+
+    .footer {
+      position: absolute;
+
+      height: 108px;
+      left: -10px;
+      top: 2170px;
+
+      background: #3c3c3c;
+      .credit {
+        position: absolute;
+        left: 6.67%;
+        right: 6.67%;
+        top: 54.63%;
+        bottom: 26.85%;
+
+        /* Disclaimer/S */
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+
+        /* Greyscale/White */
+
+        color: #ffffff;
+      }
+      img {
+        position: absolute;
+        left: 6.93%;
+        right: 63.2%;
+        top: 25.93%;
+        bottom: 56.04%;
+      }
+    }
   }
-}
-
-.footer {
-  position: absolute;
-  width: 1680px;
-  height: 120px;
-  left: 0px;
-  top: 1742px;
-
-  /* Colour/Primary-Dark */
-
-  background: #3c3c3c;
 }

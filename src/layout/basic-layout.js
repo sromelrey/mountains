@@ -43,7 +43,10 @@ const BasicLayout = (props) => {
         />
       </div>
       <div>{children}</div>
-      <div className="footer">Footer</div>
+      <div className="footer">
+        <img src="/images/logo_white.png" alt="logo" />
+        <p className="credit">Front-end developer test page – September 2021</p>
+      </div>
     </div>
   );
 };
